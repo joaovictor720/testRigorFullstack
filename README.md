@@ -1,4 +1,4 @@
-# testRigorFullstack
+# testRigor Fullstack Assignments
 
 Solutions for testRigor fullstack internship assignments, all based on Java.
 
