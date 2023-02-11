@@ -8,4 +8,4 @@ In this assignment, the code makes a "GET" HTTP request to an external API, that
 The challenge was both fixing the bug (make the code run), and also make the business logic correct, so the HTTP response would be filtered to have only unique names in the list.
 
 ### Criminal-Search
-In this one, we should simply make an algorithm that satisfied the README challenge requirements.
+In this one, we should simply make an algorithm that satisfied the README file contained in the folder, with the challenge requirements.
