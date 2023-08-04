@@ -63,24 +63,12 @@ public class Main {
             }
         }
         /**
-         * Gathering all possible matches in the actual names.
+         * Looking for partial matches in the actual names.
          */
         for (Map.Entry<String, String> criminal : criminals.entrySet()) {
             // Looking for a partial match (case-insensitive)
             if (criminal.getKey().toLowerCase().contains(possibleName.toLowerCase())) {
-                possibleMatches.add(criminal.getKey());
-            }
-        }
-        /**
-         * Analyzing each possible match, looking for exact matches in the tokens
-         */
-        for (String possibleMatch : possibleMatches) {
-            String[] nameTokens = possibleMatch.split(" ");
-            for (String token : nameTokens) {
-                if (token.equalsIgnoreCase(possibleName)){
-                    String aliases = criminals.get(possibleMatch);
-                    return buildMatchString(possibleMatch, aliases);
-                }
+                return buildMatchString(criminal.getKey(), criminal.getValue());
             }
         }
         /**
